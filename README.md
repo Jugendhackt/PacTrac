@@ -1,2 +1,3 @@
 # PacTrac 
-Mehre Pakete von verschiedenen Anbietern verfolgen 
+Mehrere Pakete von verschiedenen Anbietern verfolgen. Dabei nur eine Zentrale Website nutzen. 
+
