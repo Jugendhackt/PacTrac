@@ -19,27 +19,28 @@
 <p title="Info zu PacTrac">PacTrac ist eine Website zum tracken von 
     Paketen verschiedener Paketzusteller mithilfe der Sendungsnummer. Mehrere Sendungen von verschiedenen Lieferdienstleistern verfolgen, dabei wird nur eine Zentrale Website genutzt. 
 </p>
-<div> 
+<div style="opacity: 0" id="shipment_progress">
         <h1>Sendungsverlauf</h1>
         <ul class="list-group mb-3">
                 <li class="list-group-item d-flex justify-content-between lh-condensed">
                   <div>
                     <h6 class="my-0">Herkunft</h6>
-                    <small class="text-muted">Brief description</small>
+                    <small class="text-muted" id="origin">Brief description</small>
                   </div>
                   <span class="text-muted"></span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between lh-condensed">
                   <div>
                     <h6 class="my-0">Ziel</h6>
-                    <small class="text-muted">Brief description</small>
+                    <small class="text-muted" id="destination">Brief description</small>
                   </div>
                   <span class="text-muted"></span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between lh-condensed">
                   <div>
                     <h6 class="my-0">Startus</h6>
-                    <small class="text-muted">Brief description</small>
+                    <small class="text-muted" id="status_time">Brief description</small>
+                      <small class="text-muted" id="status_description">Brief description</small>
                   </div>
                   <span class="text-muted"></span>
                 </li>
