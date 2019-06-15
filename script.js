@@ -10,5 +10,12 @@ function request() {
         var ziel = json.shipments[0].origin.address.addressLocality;
         var status_zeit = json.shipments[0].status.timestamp;
         var status_beschreibung = json.shipments[0].status.description;
+
+        document.getElementById("shipment_progress").style.opacity = 1;
+        document.getElementById("shipment_progress").style.transition = "opacity 1s";
+        document.getElementById("origin").innerHTML = herkunft;
+        document.getElementById("destination").innerHTML = ziel;
+        document.getElementById("status_time").innerHTML = status_zeit;
+        document.getElementById("status_description").innerHTML = status_beschreibung;
     });
 }
