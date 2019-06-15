@@ -1,5 +1,7 @@
 function request() {
-    var requestURL = 'https://api-eu.dhl.com/track/shipments?trackingNumber=' + document.getElementById('delivery').value + "&language=de";
+    var delivery = document.getElementById('delivery');
+
+    var requestURL = 'https://api-eu.dhl.com/track/shipments?trackingNumber=' + delivery.value + "&language=de";
     fetch(requestURL,
         {headers: new Headers({'DHL-API-Key': 'MAy2ckLSa0w0xgxJtgrXToRWOATR41DE'})})
         .then(function (response) {
@@ -17,5 +19,5 @@ function request() {
         document.getElementById("destination").innerHTML = ziel;
         document.getElementById("status_time").innerHTML = status_zeit;
         document.getElementById("status_description").innerHTML = status_beschreibung;
-    });
+    }).catch(error => window.alert("Wir konnten kein Paket mit dieser Sendungsnummer: " + delivery.value + " finden"));
 }
