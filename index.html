@@ -1,53 +1,57 @@
 <!DOCTYPE html>
-<html lang = de>
+<html lang=de>
 
 <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<title>PacTrac</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>PacTrac</title>
     <script src="./script.js"></script>
 </head>
 
-<body style="background-color: #2171cc">
-<h1>PacTrac</h1>
-<img src="paket.png" alt="Datenschutzerklärung" title="Datenschutzerklärung" width="100" height="100" >
-<br>
- <input type="text" placeholder="Sendungsnummer" id="delivery" />
- <input type="submit" value="ok" onclick="request()"/>
-<br>
-<h2>Info</h2>
-<p title="Info zu PacTrac">PacTrac ist eine Website zum tracken von 
-    Paketen verschiedener Paketzusteller mithilfe der Sendungsnummer. Mehrere Sendungen von verschiedenen Lieferdienstleistern verfolgen, dabei wird nur eine Zentrale Website genutzt. 
-</p>
-<div style="opacity: 0" id="shipment_progress">
+<body style="background-color: #2171cc;color: white ">
+    <div class="container"><h1>PacTrac</h1>
+    <img src="box.png" alt="Datenschutzerklärung" title="Datenschutzerklärung" width="100" height="100">
+    </div>
+    <br>
+    <input type="text" placeholder="Sendungsnummer" id="delivery" />
+    <input type="submit" value="ok" onclick="request()" />
+    <br>
+    <h2>Info</h2>
+    <p title="Info zu PacTrac">PacTrac ist eine Website zum tracken von
+        Paketen verschiedener Paketzusteller mithilfe der Sendungsnummer. Mehrere Sendungen von verschiedenen
+        Lieferdienstleistern verfolgen, dabei wird nur eine Zentrale Website genutzt.
+    </p>
+    <div style="opacity: 0" id="shipment_progress">
         <h1>Sendungsverlauf</h1>
         <ul class="list-group mb-3">
-                <li class="list-group-item d-flex justify-content-between lh-condensed">
-                  <div>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div>
                     <h6 class="my-0">Herkunft</h6>
                     <small class="text-muted" id="origin">Brief description</small>
-                  </div>
-                  <span class="text-muted"></span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between lh-condensed">
-                  <div>
+                </div>
+                <span class="text-muted"></span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div>
                     <h6 class="my-0">Ziel</h6>
                     <small class="text-muted" id="destination">Brief description</small>
-                  </div>
-                  <span class="text-muted"></span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between lh-condensed">
-                  <div>
-                    <h6 class="my-0">Startus</h6>
+                </div>
+                <span class="text-muted"></span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div>
+                    <h6 class="my-0">Status</h6>
                     <small class="text-muted" id="status_time">Brief description</small>
-                      <small class="text-muted" id="status_description">Brief description</small>
-                  </div>
-                  <span class="text-muted"></span>
-                </li>
-                
-              </ul>
-        
-</div>
+                    <small class="text-muted" id="status_description">Brief description</small>
+                </div>
+                <span class="text-muted"></span>
+            </li>
+
+        </ul>
+
+    </div>
 
 
 
