@@ -1,0 +1,17 @@
+body{
+    background-color: #2171cc;
+    color: white;
+}
+.header{
+   display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.Box{
+    float: right; 
+    margin: 25px; 
+}
+.Logo{
+    text-align: center; 
+    margin: 25px; 
+}
