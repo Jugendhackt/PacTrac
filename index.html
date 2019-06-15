@@ -3,14 +3,15 @@
 
 <head>
 <title>PacTrac</title>
+    <script src="./script.js"></script>
 </head>
 
 <body>
 <h1>PacTrac</h1>
 <img src="paket.png" alt="Datenschutzerklärung" title="Datenschutzerklärung" width="100" height="100" >
 <br>
- <input type="text" value="Sendungsnummer"> 
- <button>ok</button>
+ <input type="text" placeholder="Sendungsnummer" id="delivery" />
+ <input type="submit" value="ok" onclick="request()"/>
 <br>
 <h2>Info</h2>
 <p title="Info zu PacTrac">PacTrac ist eine Website zum tracken von 
