@@ -6,15 +6,17 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>PacTrac</title>
+    <link rel="stylesheet" type="text/css" href="./Style.css">
+        <title>PacTrac</title>
     <script src="./script.js"></script>
 </head>
 
-<body style="background-color: #2171cc;color: white ">
-    <div class="container"><h1>PacTrac</h1>
-    <img src="box.png" alt="Datenschutzerklärung" title="Datenschutzerklärung" width="100" height="100">
+<body>
+    <div class="header">
+            <div><img class="Logo" src="./Logos/Pactraclogoklein00.png" alt="Logo" title="Logo" width="200" height="200"></div> 
+    <div><img class="Box" src="./Bilder/box.png" alt="Paket" title="Paket" width="100" height="100"></div>
     </div>
-    <br>
+    
     <input type="text" placeholder="Sendungsnummer" id="delivery" />
     <input type="submit" value="ok" onclick="request()" />
     <br>
