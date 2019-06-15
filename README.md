@@ -1,6 +1,6 @@
 # PacTrac 
 
-![PacTraclogoklein01.png](//Users/jans_macbook/Documents/GitHub/PacTrac/Logos/PacTraclogoklein01.png)
+![PacTraclogoklein01.png](./Logos/PacTraclogoklein01.png)
 
 Mehrere Sendungen von verschiedenen Lieferdienstleistern verfolgen, dabei wird nur eine Zentrale Website genutzt. 
 
