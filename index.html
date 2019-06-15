@@ -17,7 +17,7 @@
     <div><img class="Box" src="./Bilder/box.png" alt="Paket" title="Paket" width="100" height="100"></div>
     </div>
     
-    <input type="text" placeholder="Sendungsnummer" id="delivery" />
+    <input type="text" placeholder="Sendungsnummer" id="delivery" value="8564385550"/>
     <input type="submit" value="ok" onclick="request()" />
     <br>
     <h2>Info</h2>
@@ -25,6 +25,9 @@
         Paketen verschiedener Paketzusteller mithilfe der Sendungsnummer. Mehrere Sendungen von verschiedenen
         Lieferdienstleistern verfolgen, dabei wird nur eine Zentrale Website genutzt.
     </p>
+    <div id="loading" style="display: none">
+        <img src="./Logos/PacTracAnimation.gif">
+    </div>
     <div style="opacity: 0" id="shipment_progress">
         <h1>Sendungsverlauf</h1>
         <ul class="list-group mb-3">
