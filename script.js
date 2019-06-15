@@ -30,6 +30,7 @@ function request() {
         document.getElementById("status_time").innerHTML = status_zeit;
         document.getElementById("status_description").innerHTML = status_beschreibung;
     }).catch(function error() {
+        document.getElementById('logo').src = "./Logos/Pactraclogoklein00.png";
         loading.style.display = "none";
         document.body.style.backgroundColor = "#2171cc";
         window.alert("Wir konnten kein Paket mit dieser Sendungsnummer: " + delivery.value + " finden");
