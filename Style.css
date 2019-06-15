@@ -5,7 +5,7 @@ body{
 .header{
    display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .Box{
     float: right; 
@@ -14,4 +14,17 @@ body{
 .Logo{
     text-align: center; 
     margin: 25px; 
+
+}
+.Suchleiste{
+    text-align: center;
+
+}
+
+#Info{
+    margin: 20px;
+}
+
+.my-0{
+    color: black;
 }
