@@ -11,7 +11,7 @@ function request() {
     document.getElementById("shipment_progress").style.transition = "none";
 
     fetch(requestURL,
-        {headers: new Headers({'DHL-API-Key': '9BWJdZuDfmEyU7btrCmhMIPbrGdvseHB'})})
+        {headers: new Headers({'DHL-API-Key': '9yT9wHXeNg7DG1Zeb8ksrmjakdkYq9v7'})})
         .then(function (response) {
             return response.json()
         }).then(function (json) {
