@@ -4,7 +4,7 @@ function request() {
 
     var loading = document.getElementById('loading');
     document.getElementById('logo').src = "./Logos/PacTraclogokleinfuerweb01.png";
-    loading.style.display = "flex";
+    loading.style.display = "block";
     loading.style.justifyContent = "center";
     document.body.style.backgroundColor = "#facd2e";
     document.getElementById("shipment_progress").style.opacity = 0;
