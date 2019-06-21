@@ -1,31 +1,37 @@
-body{
+body {
     background-color: #2171cc;
     color: white;
 }
-.header{
-   display: grid;
+
+.header {
+    display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.Box{
-    float: right; 
-    margin: 25px; 
-}
-.Logo{
-    text-align: center; 
-    margin: 25px; 
 
+.box {
+    float: right;
+    margin: 25px;
 }
-.Suchleiste{
+
+.logo {
     text-align: center;
-
+    margin: 25px;
 }
 
-#Info{
+.suchleiste {
+    text-align: center;
+}
+
+.suchleiste input {
+    margin: 0.15em;
+}
+
+#info {
     margin: 20px;
 }
 
-.my-0{
+.my-0 {
     color: black;
 }
 
@@ -38,9 +44,8 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
     cursor: pointer;
     text-align: center;
-       
 }

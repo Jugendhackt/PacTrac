@@ -29,7 +29,7 @@ function request() {
         document.getElementById("destination").innerHTML = ziel;
         document.getElementById("status_time").innerHTML = status_zeit;
         document.getElementById("status_description").innerHTML = status_beschreibung;
-        document.getElementById("shipment_progress").scrollIntoView({behavior:"smooth"});
+        document.getElementById("shipment_progress").scrollIntoView({behavior: "smooth"});
     }).catch(function error() {
         document.getElementById('logo').src = "./Logos/Pactraclogoklein00.png";
         loading.style.display = "none";
