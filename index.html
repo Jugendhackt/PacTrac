@@ -2,76 +2,74 @@
 <html lang=de>
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./Style.css">
+    <meta charset="utf-8">
     <title>PacTrac</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./Style.css">
     <script src="./script.js"></script>
 </head>
 
 <body>
-    <div class="header">
-        <div><img class="Logo" id="logo" src="./Logos/Pactraclogoklein00.png" alt="Logo" title="Logo" width="200"
-                height="200">
-        </div>
-        <div>
-            <h1 style="margin: 4em 0em; margin-left: 130px;">Herzlich Willkommen, bei PacTrac!</h1>
-            <p style="margin-top: 0px; margin: 1em; text-align: center; font-size: 20px">
-                Bitte unten Sendungsnummer eingeben:
-            </p>
-        </div>
-        <div><img class="Box" src="./Bilder/box.png" alt="Paket" title="Paket" width="100" height="100"></div>
+<div class="header">
+    <div>
+        <img class="logo" id="logo" src="./Logos/Pactraclogoklein00.png" alt="Logo" title="Logo" width="200px"
+             height="200px"/>
     </div>
-
-    <div class="Suchleiste">
-        <input type="text" placeholder="Sendungsnummer" title="Sendungsnummer" id="delivery" value="" />
-        <input type="submit" value="Suchen" onclick="request()" />
-    </div>
-    <br>
-    <div id="Info">
-
-        <h1>Was macht PacTrac?</h1>
-        <p title="Info zu PacTrac">PacTrac ist eine Website zur Sendungsverfolgung von mehreren Internationalen Zustelldiensten. Das hat den Vorteil, dass du alle deine Sendungen auf einer Zentralen Website Verfolgen kannst. Wenn du diese Seite Testen m&oumlchtest, aber keine Sendungsnummer zur Hand hast, hier ist eine: 8564385550.
+    <div>
+        <h1 style="margin: 4em 0em 4em 130px;">Herzlich Willkommen, bei PacTrac!</h1>
+        <p style="margin: 1em;text-align: center; font-size: 20px">
+            Bitte unten Sendungsnummer eingeben:
         </p>
     </div>
-    <div id="loading">
-        <img src="./Logos/PacTracAnimationLadescreen.gif" style="margin-top:10.5%">
+    <div>
+        <img class="box" src="./Bilder/box.png" alt="Paket" title="Paket" width="100px" height="100px"/>
     </div>
-    <div style="opacity: 0; margin:20px " id="shipment_progress">
-        <h1>Sendungsverlauf von ihrem Paket:</h1>
-        <ul class="list-group mb-3">
-            <li class="list-group-item d-flex justify-content-between lh-condensed">
-                <div>
-                    <h6 class="my-0">Herkunft</h6>
-                    <small class="text-muted" id="origin">Brief description</small>
-                </div>
-                <span class="text-muted"></span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between lh-condensed">
-                <div>
-                    <h6 class="my-0">Ziel</h6>
-                    <small class="text-muted" id="destination">Brief description</small>
-                </div>
-                <span class="text-muted"></span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between lh-condensed">
-                <div>
-                    <h6 class="my-0">Status</h6>
-                    <small class="text-muted" id="status_time">Brief description</small>
-                    <small class="text-muted" id="status_description">Brief description</small>
-                </div>
-                <span class="text-muted"></span>
-            </li>
+</div>
 
-        </ul>
+<div class="Suchleiste">
+    <input type="text" placeholder="Sendungsnummer" title="Sendungsnummer" id="delivery" value=""/>
+    <input type="submit" value="Suchen" onclick="request()"/>
+</div>
+<br>
+<div id="Info">
 
-    </div>
-
-
-
+    <h1>Was macht PacTrac?</h1>
+    <p title="Info zu PacTrac">
+        PacTrac ist eine Website zur Sendungsverfolgung von mehreren internationalen
+        Zustelldiensten. Das hat den Vorteil, dass Du alle deine Sendungen auf einer zentralen Website Verfolgen kannst.
+        Wenn Du diese Seite testen möchtest, aber keine Sendungsnummer zur Hand hast, hier ist eine: 8564385550.
+    </p>
+</div>
+<div id="loading">
+    <img src="./Logos/PacTracAnimationLadescreen.gif" style="margin-top:10.5%">
+</div>
+<div style="opacity: 0; margin:20px " id="shipment_progress">
+    <h1>Sendungsverlauf von ihrem Paket:</h1>
+    <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+                <h6 class="my-0">Herkunft</h6>
+                <small class="text-muted" id="origin">Brief description</small>
+            </div>
+            <span class="text-muted"></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+                <h6 class="my-0">Ziel</h6>
+                <small class="text-muted" id="destination">Brief description</small>
+            </div>
+            <span class="text-muted"></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+                <h6 class="my-0">Status</h6>
+                <small class="text-muted" id="status_time">Brief description</small>
+                <small class="text-muted" id="status_description">Brief description</small>
+            </div>
+            <span class="text-muted"></span>
+        </li>
+    </ul>
+</div>
 </body>
-
-
 </html>
